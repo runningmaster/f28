@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:f28/wdgt.dart';
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -36,11 +38,11 @@ class _MyHomePageState extends State<_MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
+      body: TestList(list: makeList()),
+      /*Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            // TODO
             Text(
               'You have pushed the button this many times:',
             ),
@@ -50,7 +52,7 @@ class _MyHomePageState extends State<_MyHomePage> {
             ),
           ],
         ),
-      ),
+      ),*/
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
