@@ -84,3 +84,63 @@ class TestList extends StatelessWidget {
     );
   }
 }
+
+class TestTNF extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Name and forms"),
+      ),
+      body: Text("List of names and forms"),
+    );
+  }
+}
+
+class TestTNFOne extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Name and forms"),
+      ),
+      body: Text("List of names and forms"),
+    );
+  }
+}
+
+class TestAPI extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Active ingredients"),
+      ),
+      body: Text("List of active pharmaceutical ingredient"),
+    );
+  }
+}
+
+class TestAPIOne extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Active ingredients"),
+      ),
+      body: Text("List of active pharmaceutical ingredient"),
+    );
+  }
+}
+
+class TestATC extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("ATC/DDD Classification"),
+      ),
+      body: Text("Tree of ATC/DDD classification"),
+    );
+  }
+}
