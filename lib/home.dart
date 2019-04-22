@@ -37,9 +37,54 @@ class _MyHomePageState extends State<_MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (BuildContext context) => TestOne('SEARCH'))),
+          ),
+        ],
       ),
-      body: TestList(list: makeList()),
-      /*Center(
+      body: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            RaisedButton(
+              onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => TestTNF())),
+              child: const Text('Names and forms'),
+            ),
+            RaisedButton(
+              onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => TestAPI())),
+              child: const Text('Active ingredients'),
+            ),
+            RaisedButton(
+              onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => TestATC())),
+              child: const Text('ATC Classification'),
+            ),
+          ],
+        ),
+      ),
+      //floatingActionButton: FloatingActionButton(
+      //  onPressed: _incrementCounter,
+      //  tooltip: 'Increment',
+      //  child: Icon(Icons.add),
+      //),
+    );
+  }
+}
+
+/*Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -53,11 +98,3 @@ class _MyHomePageState extends State<_MyHomePage> {
           ],
         ),
       ),*/
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ),
-    );
-  }
-}
